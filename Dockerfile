@@ -1,5 +1,7 @@
 FROM openjdk:11
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get update -y && \
     apt-get upgrade -y && \
     apt-get install -y --no-install-recommends apt-utils software-properties-common && \
